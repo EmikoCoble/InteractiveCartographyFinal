@@ -102,8 +102,8 @@
                 data: {
                     columns: [
                         ['Dam Percentage of Area Used', props.percmax],
-                        ['Dam Percentage of Storage', props.percstorage],
-                        ['Dam Percentage of Drainage', props.percheight]
+//                        ['Dam Percentage of Storage', props.percstorage],
+//                        ['Dam Percentage of Drainage', props.percheight]
                     ],
                     type: 'gauge',
                     onclick: function (d, i) { console.log("onclick", d, i); },
@@ -138,17 +138,17 @@
                 var layer = e.target;
 
                 // You can adjust the values below to change the highlighting styles of features on mouseover
-                layer.setStyle({
-                    weight: 5,
-                    color: '#666',
-                    dashArray: '6', // defines the stroke dash pattern; check out the link for more: https://goo.gl/AWl5sC
-                    fillOpacity: 0.7
-                });
+//                layer.setStyle({
+//                    weight: 5,
+//                    color: '#666',
+//                    dashArray: '6', // defines the stroke dash pattern; check out the link for more: https://goo.gl/AWl5sC
+//                    fillOpacity: 0.7
+//                });
 
                 // Fix display layer problems with IE and Opera (no need to change anything)
-                if (!L.Browser.ie && !L.Browser.opera) {
-                    layer.bringToFront();
-                }
+//                if (!L.Browser.ie && !L.Browser.opera) {
+//                    layer.bringToFront();
+//                }
 
             makeChart(layer.feature.properties);
         }
